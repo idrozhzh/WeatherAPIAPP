@@ -16,7 +16,7 @@ class WeatherViewController: UIViewController {
             let url = URL(string: "https://goweather.herokuapp.com/weather/Moscow")
         else { return }
         
-        URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
+        URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {
                 print(error?.localizedDescription ?? "No error description")
                 return

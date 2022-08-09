@@ -8,14 +8,26 @@
 import UIKit
 
 class WeatherViewController: UIViewController {
-
-    @IBAction func buttonAction() {
-        printData()
+    @IBAction func actionButton() {
+        fetchForecast()
     }
-    
-    private func printData() {
+    private func fetchForecast() {
+        guard
+            let url = URL(string: "https://goweather.herokuapp.com/weather/Moscow")
+        else { return }
         
+        URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
+            guard let data = data else {
+                print(error?.localizedDescription ?? "No error description")
+                return
+            }
+            do {
+                let forecast = try JSONDecoder().decode(CurrentWeather.self, from: data)
+                print(forecast)
+            } catch let error {
+                print(error.localizedDescription    )
+            }
+        }.resume()
     }
-    
 }
 

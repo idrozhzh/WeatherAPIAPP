@@ -13,7 +13,7 @@
 		B31488A828A19E9300B1CB62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31488A628A19E9300B1CB62 /* Main.storyboard */; };
 		B31488AA28A19E9500B1CB62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31488A928A19E9500B1CB62 /* Assets.xcassets */; };
 		B31488AD28A19E9500B1CB62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31488AB28A19E9500B1CB62 /* LaunchScreen.storyboard */; };
-		B31488BB28A19F3500B1CB62 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31488BA28A19F3500B1CB62 /* File.swift */; };
+		B31488BB28A19F3500B1CB62 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31488BA28A19F3500B1CB62 /* Forecast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		B31488A928A19E9500B1CB62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B31488AC28A19E9500B1CB62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B31488AE28A19E9500B1CB62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B31488BA28A19F3500B1CB62 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		B31488BA28A19F3500B1CB62 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 		B31488B828A19F1B00B1CB62 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B31488BA28A19F3500B1CB62 /* File.swift */,
+				B31488BA28A19F3500B1CB62 /* Forecast.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -182,7 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B31488A528A19E9300B1CB62 /* WeatherViewController.swift in Sources */,
-				B31488BB28A19F3500B1CB62 /* File.swift in Sources */,
+				B31488BB28A19F3500B1CB62 /* Forecast.swift in Sources */,
 				B31488A128A19E9300B1CB62 /* AppDelegate.swift in Sources */,
 				B31488A328A19E9300B1CB62 /* SceneDelegate.swift in Sources */,
 			);
@@ -333,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DUXW7U8H93;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WeatherAPIAPP/Info.plist;
+				INFOPLIST_FILE = WeatherAPIAPP/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -361,7 +361,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DUXW7U8H93;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WeatherAPIAPP/Info.plist;
+				INFOPLIST_FILE = WeatherAPIAPP/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
